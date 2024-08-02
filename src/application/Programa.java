@@ -21,12 +21,10 @@ public class Programa {
 				UI.printDoTabuleiro(partida.getPeca());
 				System.out.println();
 				System.out.print("Posição que deseja movimentar: ");
-				PosicaoXadrez pecaMov = UI.lerPosicaoXadrez(sc);
-	
+				PosicaoXadrez pecaMov = UI.lerPosicaoXadrez(sc);	
 				System.out.println();
 				System.out.print("Destino: ");
 				PosicaoXadrez dest = UI.lerPosicaoXadrez(sc);
-	
 				PecaDeXadrez pecaCap = partida.movimentoPeca(pecaMov, dest);
 			} catch(XadrezException e) {
 				System.out.println(e.getMessage());
