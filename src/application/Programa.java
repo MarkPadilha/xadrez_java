@@ -18,7 +18,7 @@ public class Programa {
 		while (true) {
 			try {
 				UI.clearScreen();
-				UI.printDoTabuleiro(partida.getPeca());
+				UI.printPartida(partida);
 				System.out.println();
 				System.out.print("Posição que deseja movimentar: ");
 				PosicaoXadrez pecaMov = UI.lerPosicaoXadrez(sc);	
