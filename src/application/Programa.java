@@ -22,6 +22,11 @@ public class Programa {
 				System.out.println();
 				System.out.print("Posição que deseja movimentar: ");
 				PosicaoXadrez pecaMov = UI.lerPosicaoXadrez(sc);	
+				
+				boolean[][] movPossivel = partida.movimentosPossiveis(pecaMov);
+				UI.clearScreen();
+				UI.printDoTabuleiro(partida.getPeca(), movPossivel);
+				
 				System.out.println();
 				System.out.print("Destino: ");
 				PosicaoXadrez dest = UI.lerPosicaoXadrez(sc);
