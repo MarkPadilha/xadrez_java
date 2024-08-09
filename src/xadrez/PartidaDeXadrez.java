@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import tabuleiroDeJogo.Peca;
 import tabuleiroDeJogo.Posicao;
 import tabuleiroDeJogo.Tabuleiro;
+import xadrez.pecas.Peao;
 import xadrez.pecas.Rei;
 import xadrez.pecas.Torre;
 
@@ -187,12 +188,29 @@ public class PartidaDeXadrez {
 	}
 
 	private void setupInicial() {
-		novaPecaLocal('h', 7, new Torre(tabuleiro, Cores.BRANCA));
-		novaPecaLocal('d', 1, new Torre(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('a', 1, new Torre(tabuleiro, Cores.BRANCA));
 		novaPecaLocal('e', 1, new Rei(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('h', 1, new Torre(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('a', 2, new Peao(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('b', 2, new Peao(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('c', 2, new Peao(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('d', 2, new Peao(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('e', 2, new Peao(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('f', 2, new Peao(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('g', 2, new Peao(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('h', 2, new Peao(tabuleiro, Cores.BRANCA));
 
-		novaPecaLocal('b', 8, new Torre(tabuleiro, Cores.PRETA));
-		novaPecaLocal('a', 8, new Rei(tabuleiro, Cores.PRETA));
+		novaPecaLocal('a', 8, new Torre(tabuleiro, Cores.PRETA));
+		novaPecaLocal('e', 8, new Rei(tabuleiro, Cores.PRETA));
+		novaPecaLocal('h', 8, new Torre(tabuleiro, Cores.PRETA));
+		novaPecaLocal('a', 7, new Peao(tabuleiro, Cores.PRETA));
+		novaPecaLocal('b', 7, new Peao(tabuleiro, Cores.PRETA));
+		novaPecaLocal('c', 7, new Peao(tabuleiro, Cores.PRETA));
+		novaPecaLocal('d', 7, new Peao(tabuleiro, Cores.PRETA));
+		novaPecaLocal('e', 7, new Peao(tabuleiro, Cores.PRETA));
+		novaPecaLocal('f', 7, new Peao(tabuleiro, Cores.PRETA));
+		novaPecaLocal('g', 7, new Peao(tabuleiro, Cores.PRETA));
+		novaPecaLocal('h', 7, new Peao(tabuleiro, Cores.PRETA));
 	}
 
 }
