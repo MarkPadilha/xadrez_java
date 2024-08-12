@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import tabuleiroDeJogo.Peca;
 import tabuleiroDeJogo.Posicao;
 import tabuleiroDeJogo.Tabuleiro;
+import xadrez.pecas.Bispo;
 import xadrez.pecas.Peao;
 import xadrez.pecas.Rei;
 import xadrez.pecas.Torre;
@@ -199,7 +200,9 @@ public class PartidaDeXadrez {
 		novaPecaLocal('f', 2, new Peao(tabuleiro, Cores.BRANCA));
 		novaPecaLocal('g', 2, new Peao(tabuleiro, Cores.BRANCA));
 		novaPecaLocal('h', 2, new Peao(tabuleiro, Cores.BRANCA));
-
+		novaPecaLocal('c', 1, new Bispo(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('f', 1, new Bispo(tabuleiro, Cores.BRANCA));
+		
 		novaPecaLocal('a', 8, new Torre(tabuleiro, Cores.PRETA));
 		novaPecaLocal('e', 8, new Rei(tabuleiro, Cores.PRETA));
 		novaPecaLocal('h', 8, new Torre(tabuleiro, Cores.PRETA));
@@ -211,6 +214,8 @@ public class PartidaDeXadrez {
 		novaPecaLocal('f', 7, new Peao(tabuleiro, Cores.PRETA));
 		novaPecaLocal('g', 7, new Peao(tabuleiro, Cores.PRETA));
 		novaPecaLocal('h', 7, new Peao(tabuleiro, Cores.PRETA));
+		novaPecaLocal('c', 8, new Bispo(tabuleiro, Cores.PRETA));
+		novaPecaLocal('f', 8, new Bispo(tabuleiro, Cores.PRETA));
 	}
 
 }
