@@ -10,6 +10,7 @@ import tabuleiroDeJogo.Tabuleiro;
 import xadrez.pecas.Bispo;
 import xadrez.pecas.Cavalo;
 import xadrez.pecas.Peao;
+import xadrez.pecas.Rainha;
 import xadrez.pecas.Rei;
 import xadrez.pecas.Torre;
 
@@ -205,6 +206,7 @@ public class PartidaDeXadrez {
 		novaPecaLocal('f', 1, new Bispo(tabuleiro, Cores.BRANCA));
 		novaPecaLocal('b', 1, new Cavalo(tabuleiro, Cores.BRANCA));
 		novaPecaLocal('g', 1, new Cavalo(tabuleiro, Cores.BRANCA));
+		novaPecaLocal('d', 1, new Rainha(tabuleiro, Cores.BRANCA));
 		
 		novaPecaLocal('a', 8, new Torre(tabuleiro, Cores.PRETA));
 		novaPecaLocal('e', 8, new Rei(tabuleiro, Cores.PRETA));
@@ -221,6 +223,7 @@ public class PartidaDeXadrez {
 		novaPecaLocal('f', 8, new Bispo(tabuleiro, Cores.PRETA));
 		novaPecaLocal('b', 8, new Cavalo(tabuleiro, Cores.PRETA));
 		novaPecaLocal('g', 8, new Cavalo(tabuleiro, Cores.PRETA));
+		novaPecaLocal('d', 8, new Rainha(tabuleiro, Cores.PRETA));
 	}
 
 }
