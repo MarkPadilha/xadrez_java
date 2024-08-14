@@ -49,22 +49,6 @@ public class Peao extends PecaDeXadrez {
 				mat[p.getLinha()][p.getColuna()] = true;
 			}
 
-//			// En Passant
-//			if (posicao.getLinha() == 3) {
-//				Posicao esq = new Posicao(posicao.getLinha(), posicao.getColuna() - 1);
-//				if (getTabuleiro().posicaoExiste(esq) && existeUmaPecaRival(esq)
-//						&& getTabuleiro().peca(esq) == partidaDeXadrez.getEnPassantVulneravel()) {
-//					mat[esq.getLinha() - 1][esq.getColuna()] = true;
-//				}
-//
-//				Posicao dir = new Posicao(posicao.getLinha(), posicao.getColuna() + 1);
-//				if (getTabuleiro().posicaoExiste(dir) && existeUmaPecaRival(dir)
-//						&& getTabuleiro().peca(dir) == partidaDeXadrez.getEnPassantVulneravel()) {
-//					mat[dir.getLinha() - 1][dir.getColuna()] = true;
-//				}
-//
-//			}
-
 			// En Passant
 			if (posicao.getLinha() == 3) {
 				Posicao esq = new Posicao(posicao.getLinha(), posicao.getColuna() - 1);
@@ -80,6 +64,7 @@ public class Peao extends PecaDeXadrez {
 				}
 
 			}
+
 
 		} else {
 			p.setValores(posicao.getLinha() + 1, posicao.getColuna());
