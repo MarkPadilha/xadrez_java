@@ -41,7 +41,11 @@ public class Programa {
 				
 				if(partida.getPromocao() != null) {
 					System.out.print("Entre com a letra da peca que deseja promover: (B/T/C/Q): ");
-					String type = sc.nextLine();
+					String type = sc.nextLine().toUpperCase();
+					while(!type.equals("B") && !type.equals("C") && !type.equals("T") && !type.equals("Q")) {
+						System.out.print("Letra invalida, entre com a letra da peca que deseja promover: (B/T/C/Q): ");
+						type = sc.nextLine().toUpperCase();
+					}
 					partida.colocarPecaPromovida(type);
 				}
 
